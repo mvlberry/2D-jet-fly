@@ -1,0 +1,65 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import FighterJetEject from './components/fighter-jet-eject'
+import '../index.css'
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <FighterJetEject
+      showHint
+      touchControls="auto"
+      sound
+      volume={0.6}
+      radio
+      crash
+      weapons
+      ammo={300}
+      missiles={6}
+      reload={5}
+      enemies={3}
+      foeFire
+      slowMo={1.3}
+      cloudCut
+      ejectZoom={1}
+      speed={92}
+      boost={1.8}
+      agility={1.25}
+      bank={52}
+      altitude={110}
+      ceiling={1500}
+      clearance={7}
+      wingmen={0}
+      followPointer
+      invertY
+      stunts
+      jetScale={0.6}
+      spread={1}
+      pixelSize={3}
+      intro={false}
+      view="chase"
+      transition={1.4}
+      cameraFollow={0.6}
+      chaseDistance={2.6}
+      chaseAngle={12}
+      chaseSize={0.19}
+      timeOfDay="day"
+      land={0.33}
+      clouds={0.45}
+      seed={7}
+      shadow
+      bloom={0.8}
+      vivid={0}
+      vignette={0.3}
+      grain={0.25}
+      flameStyle="pixel"
+      afterburner={1}
+      trails
+      wake={1}
+      flash={0.6}
+      shake={1}
+      bodyColor="#545969"
+      accentColor="#f0580e"
+      canopyColor="#1e8ca0"
+    />
+  </StrictMode>,
+)
